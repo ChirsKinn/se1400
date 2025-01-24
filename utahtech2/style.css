@@ -1,0 +1,58 @@
+/* Global styles */
+body {
+    background-color: #FFFFFF;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #003058;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+  }
+  
+  /* Descendent selector for header h1 */
+  header h1 {
+    line-height: 140%;
+    padding: 0.5rem;
+  }
+  
+  /* Navigation styles */
+  nav {
+    font-weight: bold;
+    background-color: #F3F3F3;
+  }
+  
+  /* Styles for h2 elements */
+  h2 {
+    color: #424242;
+    font-family: Georgia, serif;
+  }
+  
+  /* Styles for dt elements */
+  dt {
+    color: #003058;
+    font-weight: bold;
+  }
+  
+  /* Class for .ut */
+  .ut {
+    color: #BA1C21;
+    font-weight: bold;
+  }
+  
+  /* Footer styles */
+  footer {
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* Wrapper ID styles */
+  #wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
