@@ -1,0 +1,13 @@
+<hr> = horozontal ruler like a line
+
+border:1px solid #444 = border around a certain area
+you can also do border-bottom to make it just at the bottom,
+you have solid, dotted, double, groove, outset, inset ect
+
+padding: 25px; = space around the edges of a page
+
+img src = 'blabla.jpg' height = '234' width = '342'
+figcaption - you can caption images
+
+background-image:url('aksdf;lj')
+

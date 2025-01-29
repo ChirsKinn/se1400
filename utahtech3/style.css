@@ -1,0 +1,111 @@
+/* Global styles */
+body {
+  background: linear-gradient(to bottom, #eeeeee, #ffffff);
+  background-attachment: fixed;
+  color: #666666;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+/* Wrapper ID styles */
+#wrapper {
+  width: 80%;
+  min-width: 960px;
+  max-width: 2048px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 3px rgba(66, 66, 66, 0.3);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Header styles */
+header {
+  background-color: #003058;
+  color: #FFFFFF;
+  font-family: Georgia, serif;
+}
+
+/* Descendent selector for header h1 */
+header h1 {
+  line-height: 140%;
+  padding: 0.5rem;
+  background-image: url('utahtechlogo');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+
+/* Navigation styles */
+nav {
+  font-weight: bold;
+  background-color: #F3F3F3;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* Styles for h2 elements */
+h2 {
+  color: #424242;
+  font-family: Georgia, serif;
+}
+
+/* Styles for h3 elements */
+h3 {
+  color: #003058;
+}
+
+/* Styles for dt elements */
+dt {
+  color: #003058;
+  font-weight: bold;
+}
+
+/* Class for .ut */
+.ut {
+  color: #BA1C21;
+  font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+  font-size: 0.7rem;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Main styles */
+main {
+  padding: 0 2rem;
+}
+
+/* Home hero section */
+#homehero {
+  height: 300px;
+  background-image: url('homehero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Student hero section */
+#studenthero {
+  height: 300px;
+  background-image: url('studenthero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Faculty hero section */
+#facultyhero {
+  height: 300px;
+  background-image: url('facultyhero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
