@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 100px 400px 200px 400px 700px 300px 100px;
+    gap: 0;
+    height: 100vh;
+}
+.grid-item {
+    text-align: center;
+    border: 1px solid #ccc;
+    color: white;
+    font-weight: bold;
+}
+nav {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    background-color: rgba(255, 0, 0, 0.8); /* Red */
+}
+header {
+    grid-column: 2 / 3;
+    grid-row: 3;
+    background-color: rgba(0, 255, 0, 0.8); /* Green */
+}
+.sidebar-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    background-color: rgba(0, 0, 255, 0.8); /* Blue */
+}
+.sidebar-right {
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+    background-color: rgba(255, 165, 0, 0.8); /* Orange */
+}
+.content1 {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    background-color: rgba(128, 0, 128, 0.8); /* Purple */
+}
+.content2 {
+    grid-column: 2 / 3;
+    grid-row: 4;
+    background-color: rgba(255, 255, 0, 0.8); /* Yellow */
+}
+.content3 {
+    grid-column: 2 / 3;
+    grid-row: 5;
+    background-color: rgba(0, 255, 255, 0.8); /* Cyan */
+}
+.content4 {
+    grid-column: 2 / 3;
+    grid-row: 6;
+    background-color: rgba(255, 20, 147, 0.8); /* Deep Pink */
+}
+footer {
+    grid-column: 2 / 3;
+    grid-row: 7;
+    background-color: rgba(128, 128, 128, 0.8); /* Gray */
+}
