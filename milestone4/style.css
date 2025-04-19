@@ -12,7 +12,7 @@ body {
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 10; /* ensure it's on top of the images */
+    z-index: 10; 
   }
   
   
@@ -65,15 +65,15 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
-    max-width: 1200px;    /* ✅ Controls total width */
+    max-width: 1200px;
     width: 100%;
     position: relative;
   }
   
   .hero-grid img {
     width: 100%;
-    aspect-ratio: 1 / 3;       /* ✅ Tall, equal-sized images */
-    object-fit: cover;         /* ✅ Fill the space */
+    aspect-ratio: 1 / 3;
+    object-fit: cover; 
     display: block;
   }
   
@@ -99,11 +99,11 @@ body {
     left: 0;
     right: 0;
     width: 100%;
-    max-width: 1000px; /* 👈 narrower than .hero-grid */
+    max-width: 1000px; 
     height: 100%;
     background-color: rgb(233, 196, 143);
     z-index: 1;
-    margin: 0 auto; /* 👈 keeps it centered */
+    margin: 0 auto; 
   }
   
   
@@ -114,13 +114,13 @@ body {
     padding: 2rem 3rem;
     text-align: center;
     z-index: 2;
-    /* Removed border-radius for square corners */
+
   }
   
   .download-banner h1 {
     margin: 0;
-    color: black; /* ✅ now black */
-    font-size: 3rem; /* ✅ bigger text */
+    color: black; 
+    font-size: 3rem;
     font-weight: bold;
     line-height: 1.2;
   }
@@ -176,7 +176,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: .5rem 1rem;
-    margin-top: -80px; /* 👈 This pulls it up into the hero images */
+    margin-top: -80px; 
     position: relative;
     z-index: 5;
     width: 100%;
@@ -185,8 +185,8 @@ body {
   
   .content-header h2 {
     flex: 1;
-    font-size: 1.6rem; /* ✅ bigger title */
-    color: black;       /* ✅ now black */
+    font-size: 1.6rem; 
+    color: black;      
     margin: 0 1rem;
     padding: 1rem 0;
     font-weight: bold;
@@ -196,7 +196,7 @@ body {
   
   .content-body {
     background-color: rgb(233, 196, 143);
-    width: 100%; /* ✅ Matches .content-header */
+    width: 100%; 
     padding: 2rem;
     box-sizing: border-box;
     position: relative;
@@ -241,13 +241,13 @@ body {
     aspect-ratio: 6/1;
     object-fit: cover;
     display: block;
-    margin-bottom: -205px; /* pulls images up into beige box */
+    margin-bottom: -205px; 
   }
   
   
 
   .image-spacer {
-    height: 100px; /* match or slightly exceed translateY height */
+    height: 100px; 
   } 
   
   
@@ -263,8 +263,8 @@ body {
   
 
   .footer-beige-bar {
-    height: 20px; /* 👈 adjust as needed for slimness */
-    background-color: rgb(233, 196, 143); /* same beige as your content-body */
+    height: 20px; 
+    background-color: rgb(233, 196, 143); 
     width: 100%;
   }
   
@@ -290,7 +290,7 @@ body {
   
     /* 🔹 Add spacing after sticky nav */
     #greybar {
-      margin-bottom: 0; /* pushes next content down below nav */
+      margin-bottom: 0; 
     }
   
     /* 🔹 Hide hero images */
