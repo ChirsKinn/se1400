@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Picture Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="greybar">
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('examples') }}">Examples</a></li>
+            <li><a href="{{ url_for('download') }}">Download</a></li>
+            <li><a href="{{ url_for('ai_info') }}">AI-info</a></li>
+            <li><a href="{{ url_for('help_page') }}">Help</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+
+
+    <div class="hero-container">
+        <section class="hero-grid">
+            <img src="{{ url_for('static', filename='moon.webp') }}" alt="Art 1">
+            <img src="{{ url_for('static', filename='pokemon.webp') }}" alt="Art 2">
+            <img src="{{ url_for('static', filename='rain.webp') }}" alt="Art 3">
+            <img src="{{ url_for('static', filename='pinksky.webp') }}" alt="Art 4">
+        </section>
+
+        <a href = "{{ url_for('download') }}">
+          <div class="download-wrapper">
+            <div class="download-shadow"></div>
+            <div class="download-banner">
+              <h1>Download your picture now!</h1>
+            </div>
+          </div>
+      </div>
+</a>
+
+      <section class="content-box">
+        <div class="content-header">
+          <h2>AI POWERED CREATION</h2>
+          <h2>COMPLETELY FREE</h2>
+        </div>
+      
+        <div class="content-body">
+          <div class="content-columns">
+            <div class="column">
+              <p>Our cutting-edge technology enables us to transform any image into a fun, high quality, pixelated version of itself. With the rising need for AI in the world, we decided to use it to the advantage of artists, gamers, and hobbyists that want to create cool retro-style images of almost anything. Although the program does not create images itself, it can transform existing art into a cool version of itself. Note that we are in continuous development, and plan to add more features in the future. If you encounter a bug, or have an idea for implementation, visit our help tab and submit a request. 
+            </p>
+            </div>
+            <div class="column">
+              <p>We want to go against the status quo, and make our code completely free for use. We will not require you to make an account, sign up for any newsletter, or submit any information whatsoever. All you have to do is submit the image that you desire to use, and a finished product will be downloaded on your device in return. We do not share, take, or use any information whatsoever. It may be different to many users that we do not take any data, or require any payment, but we believe this should be the future of AI. With our small stride towards what is right, we hope to influence all AI around the world to be free to its’ users, as the betterment of the world revolves around stable, and humane AI practices.        </p>
+            </div>
+          </div>
+      
+          <div class="content-images">
+            <img src="{{ url_for('static', filename='forest.webp') }}" alt="Image 1">
+            <img src="{{ url_for('static', filename='sunset.webp') }}" alt="Image 2">
+          </div>
+          <div class="footer-spacer"></div>
+          <div class="image-spacer"></div>
+        </div>
+
+      </section>
+  
+  <footer>
+    <p>Scelerisque commodo ipsum consequat ante sociosqu neque...</p>
+  </footer>
+  <div class="footer-beige-bar"></div>
+  
+</body>
+</html>

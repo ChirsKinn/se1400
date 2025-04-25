@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Examples - AI Picture Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- your shared styles -->
+  <link rel="stylesheet" href="examples.css"> <!-- page-specific styles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+
+    <div id="greybar">
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('examples') }}">Examples</a></li>
+          <li><a href="{{ url_for('download') }}">Download</a></li>
+          <li><a href="{{ url_for('ai_info') }}">AI-info</a></li>
+          <li><a href="{{ url_for('help_page') }}">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <!-- Add unique wrapper -->
+    <div class="examples-page">
+        <div class="examples-container">
+            <div class="examples-banner-container">
+                <img src="{{ url_for('static', filename='greenpixel.jpg') }}" alt="Banner">
+                <div class="examples-banner-title-wrapper">
+                </div>
+              </div>
+
+              <h1 class="examples-banner-title">Pixel Art Examples</h1>
+
+              <div class="examples-grid-wrapper">
+                <ul class="examples-intro">
+                  <li>Below are examples of the pixel generator at work! Use it as inspiration, or simply just have a look.</li>
+                
+                  <li>If you want to download your own image to turn it pixelated,
+                    <a href="{{ url_for('download') }}">CLICK HERE!</a>
+                  </li>
+
+                </ul>
+              </div>
+
+            <div class="examples-grid-wrapper">
+          <div class="examples-grid">
+            <img src="{{ url_for('static', filename='pixelated (1).png') }}" alt="Example 1">
+            <img src="{{ url_for('static', filename='pixelated (4).png') }}" alt="Example 2">
+            <img src="{{ url_for('static', filename='pixelated (5).png') }}" alt="Example 3">
+            <img src="{{ url_for('static', filename='pixelated (6).png') }}" alt="Example 4">
+            <img src="{{ url_for('static', filename='pixelated (7).png') }}" alt="Example 5">
+            <img src="{{ url_for('static', filename='pixelated (9).png') }}" alt="Example 6">
+            <img src="{{ url_for('static', filename='pixelated (10).png') }}" alt="Example 7">
+            <img src="{{ url_for('static', filename='pixelated (13).png') }}" alt="Example 8">
+            <img src="{{ url_for('static', filename='pixelated (14).png') }}" alt="Example 9">
+          </div>
+        </div>
+      </div>
+  
+      
+    <footer>
+      <p>&copy; 2025 AI Picture Generator. All rights reserved.</p>
+    </footer>
+  
+  </body>
+  
+</html>

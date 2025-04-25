@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download - AI Picture Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div id="greybar">
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('examples') }}">Examples</a></li>
+        <li><a href="{{ url_for('download') }}">Download</a></li>
+        <li><a href="{{ url_for('ai_info') }}">AI-info</a></li>
+        <li><a href="{{ url_for('help_page') }}">Help</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="examples-page">
+    <div class="examples-container">
+      
+      <div class="examples-banner-container">
+        <img src="{{ url_for('static', filename='purplepixel.jpg') }}" alt="Banner">
+        <div class="examples-banner-title-wrapper">
+        </div>
+      </div>
+
+      <h1 class="examples-banner-title">Pixelate Your Image</h1>
+      <ul class="examples-intro">
+        <li>Upload your favorite image and turn it into pixel art instantly — great for games, avatars, and retro vibes!
+        <li>Just Choose your image that is saved on your computer, and once uploaded, click the 'Pixelate & Download' button to render a pixelated version of it on your computer! It will download automatically for you on your device.
+
+        
+        
+        </ul>
+      
+      </p>
+
+      <!-- Upload Form -->
+<!-- Upload Form -->
+<!-- Upload Form -->
+<div class="upload-form-wrapper">
+  <form method="POST" enctype="multipart/form-data" class="upload-form">
+    
+    <label for="file-upload" class="upload-label">
+      Choose Your Image
+      <input id="file-upload" type="file" name="image" accept="image/*" required>
+    </label>
+
+    <br>
+
+    <button type="submit" class="upload-button">
+      Pixelate & Download
+    </button>
+
+  </form>
+</div>
+
+
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AI Picture Generator. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

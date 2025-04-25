@@ -1,0 +1,655 @@
+body {
+  background-color: #868686;
+  background-image: url('webb.png');
+  background-repeat: repeat;
+  background-blend-mode: multiply; /* or overlay/soft-light for lighter touch */
+  margin: 0;
+  padding: 0;
+}
+  
+/* 🔹 Grey bar background wrapper */
+#greybar {
+  position: sticky;  /* or use `fixed` if you want it to stay on scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* ensures it's on top of the image */
+  background-color: rgba(66, 66, 66, 0.6); /* semi-transparent if you want to see through */
+}
+  
+  
+  /* 🔹 Navigation container */
+  nav {
+    background-color: rgba(34, 34, 34, 0.7);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  /* 🔹 Flexbox Navigation Links */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  /* 🔹 Nav items */
+  nav li {
+    flex: 1;
+  }
+  
+  /* 🔹 Nav links */
+  nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    display: block;
+    text-align: center;
+    transition: background-color 0.5s ease-out;
+  }
+  
+  /* 🔹 Hover effect */
+  nav a:hover {
+    background-color: #d838a3;
+  }
+  
+  
+  .hero-container {
+    background-color: #868686;
+    width: 100%;
+    position: relative;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 1200px;  
+    width: 100%;
+    position: relative;
+  }
+  
+  .hero-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 3;    
+    object-fit: cover; 
+    display: block;
+  }
+  
+  
+  
+
+
+/* Container that holds the banner in place */
+.download-wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+  }
+  
+  /* Beige shadow box — now offset UP and LEFT */
+  .download-shadow {
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1000px; 
+    height: 100%;
+    background-color: rgb(233, 196, 143);
+    z-index: 1;
+    margin: 0 auto; 
+  }
+  
+  
+  /* Transparent grey banner */
+  .download-banner {
+    position: relative;
+    background-color: rgba(66, 66, 66, 0.7);
+    padding: 2rem 3rem;
+    text-align: center;
+    z-index: 2;
+ 
+  }
+  
+  .download-banner h1 {
+    margin: 0;
+    color: black; 
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  
+  
+  .mid-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .mid-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .text-blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #ddd;
+    padding: 2rem;
+  }
+  
+  .text-box {
+    padding: 1rem;
+  }
+  
+  .text-box h2 {
+    color: black;
+    font-size: 1.5rem;
+  }
+  
+  footer {
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: #eee;
+    padding: 1rem;
+  }
+
+/* 🔹 Container */
+.content-box {
+    max-width: 1100px;
+    margin: 4rem auto;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .content-header {
+    background-color: #796e68;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: .5rem 1rem;
+    margin-top: -80px; 
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .content-header h2 {
+    flex: 1;
+    font-size: 1.6rem; 
+    color: black;    
+    margin: 0 1rem;
+    padding: 1rem 0;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  
+  .content-body {
+    background-color: rgb(233, 196, 143);
+    width: 100%; 
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  
+  
+  
+  /* 🔹 Paragraphs */
+  .content-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .column {
+    flex: 1;
+  }
+  
+  .column p {
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+
+  .content-images {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .content-images img {
+    flex: 1;
+    width: 50%;
+    aspect-ratio: 6/1;
+    object-fit: cover;
+    display: block;
+    margin-bottom: -205px; 
+  }
+  
+  
+
+  .image-spacer {
+    height: 100px; 
+  } 
+  
+  
+  footer {
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0;
+    background-color: #868686;
+    width: 100%;
+  }
+  
+
+  .footer-beige-bar {
+    height: 20px; 
+    background-color: rgb(233, 196, 143); 
+    width: 100%;
+  }
+  
+  
+  @media only screen and (max-width: 700px) {
+    /* 🔹 Stack nav items */
+    nav ul {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    nav li {
+      flex: none;
+      width: 100%;
+    }
+  
+    nav a {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+
+    #greybar {
+      margin-bottom: 0; 
+    }
+  
+    /* 🔹 Hide hero images */
+    .hero-grid {
+      display: none;
+    }
+  
+    /* 🔹 Download banner in normal flow */
+    .download-wrapper {
+      position: static;
+      transform: none;
+      margin: 1rem auto 2rem auto;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      z-index: auto;
+    }
+  
+    .download-shadow {
+      position: absolute;
+      top: -0.5rem;
+      left: -0.5rem;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(233, 196, 143);
+      z-index: 1;
+    }
+  
+    .download-banner {
+      position: relative;
+      background-color: rgba(66, 66, 66, 0.7);
+      padding: 1.5rem 2rem 2rem 2rem;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .content-box {
+        margin-top: 6rem;
+      }
+
+      .footer-beige-bar {
+        height: 20px; 
+        background-color: rgb(233, 196, 143); 
+        width: 100%;
+      }
+      
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    /* 🔹 Stack nav items */
+    nav ul {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    nav li {
+      flex: none;
+      width: 100%;
+    }
+  
+    nav a {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+    #greybar {
+      margin-bottom: 0;
+    }
+  
+    .hero-grid {
+      display: none;
+    }
+  
+    .download-wrapper {
+      position: static;
+      transform: none;
+      margin: 1rem auto 5.5rem auto;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      z-index: auto;
+    }
+  
+    .download-shadow {
+      position: absolute;
+      top: -0.5rem;
+      left: -0.5rem;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(233, 196, 143);
+      z-index: 1;
+    }
+  
+    .download-banner {
+      position: relative;
+      background-color: rgba(66, 66, 66, 0.7);
+      padding: 1.5rem 2rem 2rem 2rem;
+      text-align: center;
+      z-index: 2;
+    }
+  
+    .content-box {
+      margin-top: 6rem;
+    }
+
+    .image-spacer {
+      height: 150px; 
+    }
+
+  }
+  
+  
+  @media only screen and (max-width: 992px) {
+    .content-box {
+      max-width: 768px;
+      margin: 2rem auto;
+    }
+  
+    
+    nav ul {
+      gap: 0.5rem;
+    }
+  }
+
+
+  .banner-container {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+    height: 250px; /* Match the examples page */
+  }
+  
+  .banner-container img {
+    width: 100%;
+    height: 100%; /* Fill container */
+    display: block;
+    object-fit: cover;
+  }
+  
+
+  /* ✅ Use a clean, below-the-banner title */
+  .banner-title {
+    font-size: 2.5rem;
+    color: rgb(43, 38, 38);
+    margin: 0 auto;
+    padding: 0rem 2rem 0rem 1rem;
+    max-width: 1100px;
+    text-align: left;
+    text-decoration: underline;
+  }
+  
+  
+
+  .ai-info-page {
+    background-color: #ffffff;
+  }
+  
+  /* Target main container for AI Info only */
+  .ai-info-page .info-section {
+    background-color: #ffffff;
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Section headers - beige bar across */
+  .ai-info-page .section-header {
+    background-color: rgb(233, 196, 143);
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    margin-top: 3rem;
+    border-radius: 5px;
+
+  }
+  
+  /* Unified white layout, no boxes */
+  .ai-info-page .section-content {
+    padding: 1rem 0;
+    border-radius: 0;
+    margin: 0;
+    background-color: transparent;
+  }
+  
+  .ai-info-page .section-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  .ai-info-page .section-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+
+  .examples-grid-wrapper {
+    max-width: 1100px;        /* Match your nav/content width */
+    margin: 0 auto;           /* Center it */
+    padding: 0 2rem;          /* Optional: match left/right spacing */
+    box-sizing: border-box;
+  }
+  
+
+  .examples-page .examples-grid {
+    column-count: 3;
+    column-gap: 1rem;
+  }
+  
+  .examples-page .examples-grid img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    display: block;
+    break-inside: avoid;
+    transition: transform 0.3s ease;
+  }
+  
+  .examples-page .examples-grid img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Responsive breakpoints */
+  @media screen and (max-width: 1000px) {
+    .examples-page .examples-grid {
+      column-count: 2;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .examples-page .examples-grid {
+      column-count: 1;
+    }
+  }
+  
+  
+  .examples-page footer {
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: #eee;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  
+
+  .examples-banner-container {
+    margin-top: 0;
+    padding-top: 0;
+    height: 250px; /* or however tall you want it */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .examples-banner-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .examples-banner-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .examples-banner-title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+  }
+  
+  .examples-banner-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    padding: 2rem 2rem 1rem 6rem; /* Top, right, bottom, left */
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+    text-decoration: underline;
+
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  .examples-intro {
+    max-width: 1100px;       /* Match grid width */
+    margin: -1rem auto 0rem auto;
+    padding: 1rem 4rem;      /* Match grid horizontal padding */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000000;
+    text-align: left;
+    list-style-type: disc;
+    box-sizing: border-box;
+    font-weight: bold;
+  }
+  
+
+  .upload-form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .upload-form {
+    text-align: center;
+  }
+  
+  .upload-label {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-label:hover {
+    background-color: #ccc;
+  }
+  
+  .upload-label input[type="file"] {
+    display: none;
+  }
+  
+  .upload-button {
+    padding: 1rem 3rem;
+    margin-bottom:1rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-button:hover {
+    background-color: #45a049;
+  }
+  

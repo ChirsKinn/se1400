@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Help - AI Picture Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .help-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: #f4f4f4;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .help-container h1 {
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    form input[type="submit"] {
+      margin-top: 1.5rem;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #d838a3;
+    }
+
+    .confirmation-message {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #e6ffe6;
+      border: 1px solid #66bb66;
+      border-radius: 5px;
+      color: #226622;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="greybar">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="examples.html">Examples</a></li>
+        <li><a href="ai-info.html">AI-info</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="help-container">
+    <h1>Need Help?</h1>
+    <p>Submit your inquery below. " * " = required field</p>
+
+    <form id="helpForm" onsubmit="return submitHelpForm();">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="First and Last Name">
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+      <label for="message">Message*</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <div class="confirmation-message" id="confirmationMessage">
+      Your input was submitted. Thank you!
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AI Picture Generator. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitHelpForm() {
+      document.getElementById('confirmationMessage').style.display = 'block';
+      document.getElementById('helpForm').reset();
+      return false; // prevent actual submission
+    }
+  </script>
+
+</body>
+</html>

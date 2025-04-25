@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Info - AI Picture Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+  <div id="greybar">
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('examples') }}">Examples</a></li>
+        <li><a href="{{ url_for('download') }}">Download</a></li>
+        <li><a href="{{ url_for('ai_info') }}">AI-info</a></li>
+        <li><a href="{{ url_for('help_page') }}">Help</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="banner-container">
+    <img src="{{ url_for('static', filename='pixel_banner1.jpg') }}" alt="AI Art Banner">
+  </div>
+  
+
+  
+
+  <div class="ai-info-page">
+  <main class="info-section">
+  <h1 class="banner-title">AI-Info</h1>
+    <!-- Section: Our Community -->
+    <div class="section-header">Is AI art ethical?</div>
+    <div class="section-content">
+      <h3>Overall Uses</h3>
+      <p>This question — how do we ethically and responsibly use AI — will haunt our generation for the next 50 years. As new tools continue to emerge, the lines between human and machine-made work will become harder to define. In the case of AI art specifically, it’s already becoming clear that it poses a lot of moral dilemmas. Unlike traditional or digital art made by human professionals, AI-generated art often pulls from large datasets without direct consent from the original creators. This has raised serious concerns in the creative community.
+
+        With that said, AI technology is not going away. Its effectiveness is only growing. Eventually, AI-generated art will be indistinguishable from art made by humans — and honestly, in many cases, it already is. When that happens, there will need to be a real system in place to label or tag AI-created works, or even those that used AI as part of the process. This isn’t about gatekeeping — it’s about transparency. Creators, clients, and audiences all deserve to know whether a piece of work came from a person, an algorithm, or some combination of both.
+        
+        With clear distinctions, people can then be held accountable for what they choose to use in their personal, academic, or professional projects. We don’t need to ban AI tools — we just need to be honest about how and when they’re used.</p>
+
+      <h3>What about this program?</h3>
+      <p>The program I made is a much simpler and, in my opinion, more ethically sound use of AI. Instead of generating completely new artwork, it allows users to apply a pixelation filter to existing images. That’s it — no scraped data from artists, no generation of copyrighted characters, no risk of stealing someone’s original creation.
+
+        The idea was to take something that’s usually kind of annoying or time-consuming — manually pixelating an image — and make it instant, easy, and free. If you’ve ever tried to pixelate an image on your own, you know it’s a multi-step process. You either need to learn editing software like Photoshop, hope that your program supports pixelation natively, or pay for some kind of online converter. With this tool, it happens in seconds. Upload your image, and boom — pixelated version ready to download.
+        
+        To be clear, I think this use of AI is ethical because it’s not creating new art — it’s transforming existing art that the user owns or uploads. It’s no different from applying a filter in Photoshop, but faster and easier to access.</p>
+    </div>
+
+    <!-- Section: How to write better prompts -->
+    <div class="section-header">What images work?</div>
+    <div class="section-content">
+      <h3>Almost Everything Works!</h3>
+      <p>You can upload just about any image format, but I recommend using PNGs or any high-resolution web image. Most of the time, it works perfectly. I do encourage people to test it out and see how their images turn out, because the results can be pretty cool. It adds a nice retro effect to photos, artwork, or even memes.
+
+        The current pixel size is automatically determined based on the quality and dimensions of your uploaded image. In short: the higher the resolution, the better the result. If you upload something really small or low-res, the pixels might get stretched out to the point where the image becomes hard to recognize. That’s just how pixelation works — less detail means chunkier squares.
+        
+        In the future, we’ll give users more control. One of my short-term goals is to allow you to pick your pixel resolution. That means you could crank the pixelation all the way up for a super 8-bit effect, or lower it for a more subtle style.</p>
+    </div>
+
+    <!-- Section: Is AI art ethical? -->
+    <div class="section-header">Our developement goals</div>
+    <div class="section-content">
+      <h3>Goals</h3>
+      <p>This website is a work in progress — I built it myself as a school project — and there’s a lot more I want to do with it. Right now, it’s functional but minimal. The UI is super basic, and I’m the first to admit it looks like something from the dot-com boom. That will change.
+
+        Here’s what I’m working on next:
+        
+        Pixel Size Customization: Like I mentioned earlier, I want users to be able to set how intense the pixelation is.
+        
+        UI/UX Redesign: I plan to overhaul the look and feel of the site to make it more modern, responsive, and user-friendly.
+        
+        AI Image Generation + Pixelation: Eventually, I want to add a feature where the AI can generate an image from a prompt (e.g., “a pixelated dragon,” or “a retro video game city”) and then automatically apply the pixelation effect.
+        
+        Download Quality Settings: More control over file size, output dimensions, and format.
+        
+        In the long run, I want this to become a little creative hub — a space where people can experiment with their own art and give it a nostalgic or stylistic twist.</p>
+
+      <h3>The dev. team</h3>
+      <p>This entire site was created by one person — me. I built it from scratch for a school assignment, but it's grown into something I’m genuinely passionate about. I know there are rough edges (you’ve probably found some already), but that’s part of the journey.
+
+        I’m still learning how to code, design, and develop features like this, so I appreciate your patience if something breaks or feels janky. This isn’t some corporate tool with a giant team behind it — just a student trying to make something fun and useful.</p>
+    </div>
+
+    <!-- Section: Showcase your work -->
+    <div class="section-header">Help us with Feedback!</div>
+    <div class="section-content">
+      <h3>Why it matters</h3>
+      <p>Your feedback is everything to me. I genuinely want to know what works, what’s confusing, and what you wish the site could do. I’ve already had a few users reach out with great ideas, and I’m actively working on adding them.
+
+        There’s a Help page on the site where you can submit feedback or bug reports. Please don’t hesitate to use it — I read everything that comes in and I respond personally to each message. If something doesn’t work the way you expected, or if there’s a feature you’d love to see added, just let me know.</p>
+
+      <h3>How do I submit a request?</h3>
+      <p>When submitting feedback, the more detail the better. Here’s what helps me most:
+
+        What page were you on?
+        
+        What image did you upload?
+        
+        What specifically went wrong (or what didn’t meet your expectations)?
+        
+        What did you expect to happen?
+        
+        What browser or device are you using?
+        
+        If you can include that info, I’ll be able to reproduce the issue and fix it much faster.</p>
+    </div>
+
+  </main>
+</div>
+
+
+  <footer>
+    <p>&copy; 2025 AI Picture Generator. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
